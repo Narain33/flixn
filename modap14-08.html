@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>nflix demo</title>
+    <style>
+      .background{
+    background-image: url('/assests/nflix\ bg.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;
+    opacity:10;
+  }
+  .narain{
+    padding-top: 10vw;
+    padding-left:10vw;
+    padding-right:10vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    margin: top 500px;
+    margin: left 100pxx;
+  font-weight: bolder;
+  opacity:10;
+  font-family: 'Martel Sans', sans-serif;
+  }
+  .karthick{
+    padding-left: 30vw;
+    padding-right:20vw;
+    padding-top:3vw;
+    padding-bottom:10vw;
+    opacity:0.90;
+    align-items: center;
+   
+  }
+  
+  @font-face { 
+  font-display:optional;
+  font-family:Netflix Sans;
+  font-weight:100;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
+} 
+@font-face { 
+  font-display:optional;
+  font-family:Netflix Sans;
+  font-weight:300;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff");
+} 
+@font-face { 
+  font-display:optional;
+  font-family:Netflix Sans;
+  font-weight:400;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff");
+} 
+@font-face { 
+  font-display:optional;
+  font-family:Netflix Sans;
+  font-weight:500;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff");
+} 
+@font-face { 
+  font-display:optional;
+  font-family:Netflix Sans;
+  font-weight:700;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff");
+} 
+@font-face { 
+  font-display:optional;
+  font-family:Netflix Sans;
+  font-weight:900;
+  src:url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff");
+} 
+  body {  
+    letter-spacing:0!important;
+    text-align:center;
+    color:rgb(255,255,255);
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    background:#000;
+  }  
+* { 
+    letter-spacing: 0!important;
+} 
+
+body { 
+    margin: 0;
+} 
+
+body { 
+    background: #000;
+} 
+
+html { 
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+    font-family: sans-serif;
+} 
+
+html { 
+    background: #000;
+} 
+
+.default-ltr-cache-19f4kxn { 
+    margin: 0; 
+    font-size: 2rem; 
+    font-weight: 700;
+} 
+
+@media screen and (min-width: 960px){ 
+  .default-ltr-cache-19f4kxn { 
+    font-size: 3rem; 
+    font-weight: 900;
+  } 
+}     
+
+.default-ltr-cache-dm6jit { 
+    position: relative; 
+    display: -webkit-box; 
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    color: rgb(255,255,255); 
+    text-align: center; 
+    height: 100%; 
+    box-sizing: border-box; 
+    min-height: auto; 
+    padding: 3.5rem 0;
+} 
+
+@media screen and (min-width: 600px){ 
+  .default-ltr-cache-dm6jit { 
+    min-height: auto; 
+    padding: 4.5rem 0;
+  } 
+}     
+
+@media screen and (min-width: 960px){ 
+  .default-ltr-cache-dm6jit { 
+    min-height: auto; 
+    padding: 4.5rem 0;
+  } 
+}     
+
+.default-ltr-cache-1yz1b0z { 
+    width: 100%; 
+    height: 0.5rem; 
+    position: absolute; 
+    bottom: -0.5rem; 
+    background-color: rgb(35,35,35);
+} 
+
+.default-ltr-cache-50btai { 
+    margin: auto; 
+    max-width: calc(100% - 3rem); 
+    display: -webkit-box; 
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-align-items: center; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    -webkit-flex-direction: column; 
+    -ms-flex-direction: column; 
+    flex-direction: column; 
+    text-align: center;
+} 
+
+@media screen and (min-width: 600px){ 
+  .default-ltr-cache-50btai { 
+    max-width: calc(100% - 4rem);
+  } 
+}     
+
+@media screen and (min-width: 960px){ 
+  .default-ltr-cache-50btai { 
+    max-width: calc(100% - 4rem);
+  } 
+}     
+
+@media screen and (min-width: 1280px){ 
+  .default-ltr-cache-50btai { 
+    max-width: calc(83.33333333333334% - 6rem);
+  } 
+}     
+
+@media screen and (min-width: 960px){ 
+  .default-ltr-cache-50btai { 
+    -webkit-flex-direction: row; 
+    -ms-flex-direction: row; 
+    flex-direction: row;
+  } 
+}     
+
+.default-ltr-cache-tmevzf { 
+    -webkit-flex-basis: 50%; 
+    -ms-flex-preferred-size: 50%; 
+    flex-basis: 50%; 
+    padding: 0; 
+    z-index: 1; 
+    width: 100%;
+} 
+
+@media screen and (min-width: 960px){ 
+  .default-ltr-cache-tmevzf { 
+    text-align: left; 
+    padding-right: 0.375rem;
+  } 
+}     
+
+.default-ltr-cache-7cljuy { 
+    -webkit-flex-basis: 50%; 
+    -ms-flex-preferred-size: 50%; 
+    flex-basis: 50%; 
+    padding: 0; 
+    z-index: 1;
+} 
+
+@media screen and (min-width: 960px){ 
+  .default-ltr-cache-7cljuy { 
+    padding-left: 0.375rem;
+  } 
+}     
+
+h2 { 
+    font-weight: 500;
+} 
+
+.default-ltr-cache-1ndpmgo { 
+    margin: 1rem 0 0; 
+    font-size: 1.125rem; 
+    font-weight: 400;
+} 
+
+@media screen and (min-width: 960px){ 
+  .default-ltr-cache-1ndpmgo { 
+    font-size: 1.5rem; 
+    font-weight: 400;
+  } 
+}     
+
+.default-ltr-cache-1asgq30 { 
+    margin: 1.5rem 0 0;
+} 
+
+.default-ltr-cache-bjn8wh { 
+    position: relative;
+} 
+
+img { 
+    border: 0;
+} 
+
+.default-ltr-cache-1d3w5wq { 
+    width: 100%;
+} 
+
+.default-ltr-cache-m5f3qu { 
+    z-index: -1; 
+    overflow: hidden; 
+    width: 100%; 
+    height: 100%; 
+    max-width: 73%; 
+    max-height: 54%; 
+    position: absolute; 
+    top: 46%; 
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%); 
+    -moz-transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+} 
+
+video { 
+    display: inline-block; 
+    vertical-align: baseline;
+} 
+.panel3{
+  padding-left: 10vw;
+  padding-bottom:10vw ;
+  padding-top:10vw ;
+}
+.accordio1{
+  padding-top:1.5vw;
+  padding-left:1vw;
+  padding-right:1vw;
+  padding-bottom:3vw;
+  background-color:black;
+}
+  
+      </style>
+</head>
+<body>
+<div class="nk12">
+  <div class="background">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+         <img src="assests/nflix icon.png" style="height: 24px; padding: auto;margin-top: 5%; opacity:2000;"  >
+        </div>
+          <div class="col-2">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"style="margin-top: 10%">
+                Language
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">HINDI</a></li>
+                <li><a class="dropdown-item" href="#">TAMIL</a></li>
+                <li><a class="dropdown-item" href="#">MALAYALAM</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-danger"style="margin-top:10%">Sig in</button>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+       <div class=" narain">
+       
+<h1>WELCOME YOU ALL, NFLIX N CHILL</h1><br>
+<h3>Watch anywhere. Cancel anytime.</h3><br>
+<h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+       </div>
+        </div>
+        <form >
+        <div class="karthick">
+         
+          <div class="row">
+         <div class="col-6">
+          <div class="form-floating mb-3" style="color: black;">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
+          </div>
+       
+        </div> 
+          <div class ="col-6">
+            <div class="getstarted">
+             <button type="button" class="btn btn-danger" style="font-size: 20px; padding: 10px 20px;background-color:red;">Get started > </button>
+             </div>
+          </div>
+        </div>
+        </div>
+      </form>
+    </div>     
+</div>
+
+<div class="default-ltr-cache-dm6jit ejqbulh6 snipcss-yMcQa" data-uia="nmhp-card-animation+watchOnTv">
+  <div class="default-ltr-cache-50btai ejqbulh1">
+    <div class="default-ltr-cache-tmevzf ejqbulh5">
+      <h2 data-uia="nmhp-card-animation-text-title" class="default-ltr-cache-19f4kxn ejqbulh8">
+        Enjoy on your TV
+      </h2>
+      <p data-uia="nmhp-card-animation-text-subtitle" class="default-ltr-cache-1ndpmgo ejqbulh7">
+        Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+      </p>
+      <div class="default-ltr-cache-1asgq30 ejqbulh4">
+        <div class="center-pixel default-ltr-cache-1qms9jn ekwtkbw0">
+        </div>
+      </div>
+    </div>
+    <div class="default-ltr-cache-7cljuy ejqbulh3">
+      <div class="default-ltr-cache-bjn8wh">
+        <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq snipcss0-0-0-1">
+        <div data-uia="nmhp-card-animation-asset-motion" class="default-ltr-cache-m5f3qu e15c37ii14">
+          <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="">
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4">
+          </video>
+          <div class="default-ltr-cache-0">
+          </div>
+          <div data-uia="nmhp-card-animation-asset-custom" aria-hidden="true" class="default-ltr-cache-0 e15c37ii13">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-uia="nmhp-card-animation+watchOnTv+divider" class="default-ltr-cache-1yz1b0z ejqbulh0">
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class ="panel3">
+        <h1>CREATE YOUR PANNEL FOR KIDS</h1>
+        <h3> Create profiles for kids</h3>
+        <h3>characters in a space made just for 
+          them—free with your membership.</h3>
+      </div>
+    </div>
+    <div class="col">
+      <img src="/assests/children.png"style="padding:5vw">
+    </div>
+   
+  </div>
+</div>
+<div class="accardian">
+  <h1>FAQ's</h1>
+</div>
+<div class="accordio1">
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        WHY netflix?
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne"style="background-color:black">
+      <div class="accordion-body">
+        <strong><code>is the coolest platform</code></strong>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item"style="background-color:black">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        ADD items 2
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo"style="background-color:black">
+      <div class="accordion-body" style="background-color: #000;">
+        <strong><code>add item</code></strong>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        ADD ITEM 3
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree"style="background-color:black">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+
+</html>
